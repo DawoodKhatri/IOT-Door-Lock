@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Button, Input, InputButton, Loading, Notify } from "../src/components";
+import { Button, Input, InputButton, Loading, Notify } from "../components";
 import Link from "next/link";
 
 export default function Home() {
