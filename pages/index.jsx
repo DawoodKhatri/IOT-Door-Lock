@@ -36,7 +36,7 @@ export default function Home() {
       setNotification({ danger: response.status !== 200, text: message });
     } catch (error) {
       setLoading(false);
-      setNotification({ danger: true, text: error.message });
+      setNotification({ danger: true, text: "Device Offline" });
     }
   };
 
@@ -52,7 +52,7 @@ export default function Home() {
       setNotification({ danger: response.status !== 200, text: message });
     } catch (error) {
       setLoading(false);
-      setNotification({ danger: true, text: error.message });
+      setNotification({ danger: true, text: "Device Offline" });
     }
   };
 
