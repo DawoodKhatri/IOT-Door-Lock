@@ -60,7 +60,7 @@ export default function ChangePassword() {
     <div className="relative">
       {loading && <Loading />}
       <main className="flex flex-col text-center p-5 w-[100vw] h-[100vh]">
-        <div className="bg-blue-600 p-5 rounded rounded-2xl w-fit mx-auto">
+        <div className="bg-blue-600 p-5 rounded rounded-2xl w-fit mx-auto md:mt-2">
           <h1 className="text-2xl font-bold text-white">
             Wifi Controlled Remote Door Lock System
           </h1>
