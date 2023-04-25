@@ -7,7 +7,7 @@ export default function Home() {
   const [notification, setNotification] = useState();
   const [loading, setLoading] = useState(false);
 
-  const api = "http://192.168.248.32";
+  const api = "http://192.168.78.32";
 
   const clear = () => {
     setPassword("");
@@ -34,6 +34,9 @@ export default function Home() {
       const message = await response.text();
       setLoading(false);
       setNotification({ danger: response.status !== 200, text: message });
+      if(message == "Incorrect Password") {
+        fetch("/api/sendAlert")
+      }
     } catch (error) {
       setLoading(false);
       setNotification({ danger: true, text: "Device Offline" });

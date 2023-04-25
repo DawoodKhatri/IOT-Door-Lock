@@ -9,7 +9,7 @@ export default function ChangePassword() {
   const [notification, setNotification] = useState();
   const [loading, setLoading] = useState(false);
 
-  const api = "http://192.168.248.32";
+  const api = "http://192.168.78.32";
 
   const clear = () => {
     if (curr === 0) {
